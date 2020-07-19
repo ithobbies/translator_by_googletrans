@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>961</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e0e0e0;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="input_text">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>61</y>
+      <width>480</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border: 0;
+padding: 25px
+</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="output_text">
+    <property name="geometry">
+     <rect>
+      <x>481</x>
+      <y>61</y>
+      <width>480</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border: 0;
+padding: 25px
+</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="toolbar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>961</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_check_lang">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>480</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #4284f3;
+	border: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+
+}
+
+QPushButton:hover {
+	background-color: #d4e8fa;
+}
+
+QPushButton:pressed {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid #4284f3;
+	background-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>ОПРЕДЕЛИТЬ ЯЗЫК</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_eng_lang">
+     <property name="geometry">
+      <rect>
+       <x>481</x>
+       <y>0</y>
+       <width>180</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #4284f3;
+	border: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+
+}
+
+QPushButton:hover {
+	background-color: #d4e8fa;
+}
+
+QPushButton:pressed {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid #4284f3;
+	background-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>АНГЛИЙСКИЙ</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_ru_lang">
+     <property name="geometry">
+      <rect>
+       <x>661</x>
+       <y>0</y>
+       <width>140</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #4284f3;
+	border: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+
+}
+
+QPushButton:hover {
+	background-color: #d4e8fa;
+}
+
+QPushButton:pressed {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid #4284f3;
+	background-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>РУССКИЙ</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_ge_lang">
+     <property name="geometry">
+      <rect>
+       <x>801</x>
+       <y>0</y>
+       <width>160</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #4284f3;
+	border: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+
+}
+
+QPushButton:hover {
+	background-color: #d4e8fa;
+}
+
+QPushButton:pressed {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid #4284f3;
+	background-color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>НЕМЕЦКИЙ</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_translate">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>461</y>
+      <width>961</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: #4284f3;
+	border: 0
+
+}
+
+QPushButton:hover {
+	background-color: #76a4f5;
+	border: 0
+}
+
+QPushButton:pressed {
+	background-color: white;
+	color: #4284f3;
+	border-top: 2px solid #4284f3;
+}</string>
+    </property>
+    <property name="text">
+     <string>ПЕРЕВЕСТИ</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

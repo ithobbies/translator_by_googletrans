@@ -3,6 +3,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from ui import Ui_MainWindow
 from googletrans import Translator
 
+
+
 class Lang():
     def __init__(self):
         self.selected_language = ''
@@ -10,6 +12,7 @@ class Lang():
     def set_lang(self, selected_language):
         self.selected_language = selected_language
     
+
 
 class TranslateText(QtWidgets.QMainWindow):
     def __init__(self):
@@ -19,7 +22,7 @@ class TranslateText(QtWidgets.QMainWindow):
         self.init_UI()
     
     def init_UI(self):
-        self.setWindowTitle('Google Translate') 
+        self.setWindowTitle('Translator') 
         self.ui.btn_translate.clicked.connect(self.translate)
         self.ui.btn_check_lang.setDown(True)
         

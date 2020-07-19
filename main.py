@@ -26,9 +26,9 @@ class TranslateText(QtWidgets.QMainWindow):
         self.ui.btn_translate.clicked.connect(self.translate)
         self.ui.btn_check_lang.setDown(True)
         
-        self.ui.btn_eng_lang.clicked.connect(lambda: lang.set_lang('en'))
+        self.ui.btn_en_lang.clicked.connect(lambda: lang.set_lang('en'))
         self.ui.btn_ru_lang.clicked.connect(lambda: lang.set_lang('ru'))
-        self.ui.btn_ge_lang.clicked.connect(lambda: lang.set_lang('de'))
+        self.ui.btn_de_lang.clicked.connect(lambda: lang.set_lang('de'))
 
     def translate(self):
         input_text = self.ui.input_text.toPlainText()

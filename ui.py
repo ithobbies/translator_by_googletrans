@@ -73,20 +73,18 @@ class Ui_MainWindow(object):
 "    border-bottom: 4px solid #4284f3;\n"
 "    background-color: white;\n"
 "}")
-        self.btn_check_lang.setCheckable(True)
-        self.btn_check_lang.setChecked(True)
-        self.btn_check_lang.setAutoRepeat(False)
         self.btn_check_lang.setObjectName("btn_check_lang")
-        self.btn_eng_lang = QtWidgets.QPushButton(self.toolbar)
-        self.btn_eng_lang.setGeometry(QtCore.QRect(481, 0, 180, 60))
+
+        self.btn_en_lang = QtWidgets.QPushButton(self.toolbar)
+        self.btn_en_lang.setGeometry(QtCore.QRect(481, 0, 180, 60))
         font = QtGui.QFont()
         font.setFamily("Roboto")
         font.setPointSize(12)
         font.setBold(True)
         font.setUnderline(False)
         font.setWeight(75)
-        self.btn_eng_lang.setFont(font)
-        self.btn_eng_lang.setStyleSheet("QPushButton {\n"
+        self.btn_en_lang.setFont(font)
+        self.btn_en_lang.setStyleSheet("QPushButton {\n"
 "    color: #4284f3;\n"
 "    border: 0;\n"
 "    border-top: 4px solid transparent;\n"
@@ -103,10 +101,8 @@ class Ui_MainWindow(object):
 "    border-bottom: 4px solid #4284f3;\n"
 "    background-color: white;\n"
 "}")
-        self.btn_eng_lang.setCheckable(True)
-        self.btn_eng_lang.setChecked(True)
-        self.btn_eng_lang.setAutoRepeat(False)
-        self.btn_eng_lang.setObjectName("btn_eng_lang")
+        self.btn_en_lang.setObjectName("btn_en_lang")
+
         self.btn_ru_lang = QtWidgets.QPushButton(self.toolbar)
         self.btn_ru_lang.setGeometry(QtCore.QRect(661, 0, 140, 60))
         font = QtGui.QFont()
@@ -133,20 +129,18 @@ class Ui_MainWindow(object):
 "    border-bottom: 4px solid #4284f3;\n"
 "    background-color: white;\n"
 "}")
-        self.btn_ru_lang.setCheckable(True)
-        self.btn_ru_lang.setChecked(True)
-        self.btn_ru_lang.setAutoRepeat(False)
         self.btn_ru_lang.setObjectName("btn_ru_lang")
-        self.btn_ge_lang = QtWidgets.QPushButton(self.toolbar)
-        self.btn_ge_lang.setGeometry(QtCore.QRect(801, 0, 160, 60))
+
+        self.btn_de_lang = QtWidgets.QPushButton(self.toolbar)
+        self.btn_de_lang.setGeometry(QtCore.QRect(801, 0, 160, 60))
         font = QtGui.QFont()
         font.setFamily("Roboto")
         font.setPointSize(12)
         font.setBold(True)
         font.setUnderline(False)
         font.setWeight(75)
-        self.btn_ge_lang.setFont(font)
-        self.btn_ge_lang.setStyleSheet("QPushButton {\n"
+        self.btn_de_lang.setFont(font)
+        self.btn_de_lang.setStyleSheet("QPushButton {\n"
 "    color: #4284f3;\n"
 "    border: 0;\n"
 "    border-top: 4px solid transparent;\n"
@@ -163,10 +157,8 @@ class Ui_MainWindow(object):
 "    border-bottom: 4px solid #4284f3;\n"
 "    background-color: white;\n"
 "}")
-        self.btn_ge_lang.setCheckable(True)
-        self.btn_ge_lang.setChecked(True)
-        self.btn_ge_lang.setAutoRepeat(False)
-        self.btn_ge_lang.setObjectName("btn_ge_lang")
+        self.btn_de_lang.setObjectName("btn_de_lang")
+        
         self.btn_translate = QtWidgets.QPushButton(self.centralwidget)
         self.btn_translate.setGeometry(QtCore.QRect(0, 461, 961, 60))
         font = QtGui.QFont()
@@ -202,9 +194,9 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.btn_check_lang.setText(_translate("MainWindow", "ОПРЕДЕЛИТЬ ЯЗЫК"))
-        self.btn_eng_lang.setText(_translate("MainWindow", "АНГЛИЙСКИЙ"))
+        self.btn_en_lang.setText(_translate("MainWindow", "АНГЛИЙСКИЙ"))
         self.btn_ru_lang.setText(_translate("MainWindow", "РУССКИЙ"))
-        self.btn_ge_lang.setText(_translate("MainWindow", "НЕМЕЦКИЙ"))
+        self.btn_de_lang.setText(_translate("MainWindow", "НЕМЕЦКИЙ"))
         self.btn_translate.setText(_translate("MainWindow", "ПЕРЕВЕСТИ"))
 
 
